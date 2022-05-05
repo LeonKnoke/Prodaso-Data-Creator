@@ -1,0 +1,54 @@
+[
+    {
+        "user": "p-mqtt-u05",
+        "password": "atrS2DE6xjxm"
+    },
+    {
+        "clientID": "demobox1",
+        "randomKey": 25,
+        "debug": 2,
+        "timeScale": 1.3
+    },
+    {
+        "clientID": "demobox2",
+        "randomKey": 18,
+        "debug": 2,
+        "timeScale": 0.3
+    },
+    {
+        "clientID": "demobox3",
+        "randomKey": 89,
+        "debug": 2,
+        "timeScale": 2.4
+    },
+    {
+        "clientID": "demobox4",
+        "randomKey": 56,
+        "debug": 2,
+        "timeScale": 1.6
+    },
+    {
+        "clientID": "demobox5",
+        "randomKey": 34,
+        "debug": 2,
+        "timeScale": 0.7
+    },
+    {
+        "clientID": "demobox6",
+        "randomKey": 92,
+        "debug": 2,
+        "timeScale": 0.5
+    },
+    {
+        "clientID": "demobox7",
+        "randomKey": 17,
+        "debug": 2,
+        "timeScale": 1.0
+    },
+    {
+        "clientID": "demobox8",
+        "randomKey": 9,
+        "debug": 2,
+        "timeScale": 1.8
+    }
+]
