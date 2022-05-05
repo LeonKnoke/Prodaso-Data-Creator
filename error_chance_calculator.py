@@ -27,10 +27,10 @@ import random
 
 accuracy = 30000        # number of iterations (>10000 recommeded)
 
-randomizerMin = 0       # minimum Value supported is 0
-randomizerMax = 255     # maximum Value supported is 255
+randomizerMin = 19       # minimum Value supported is 0
+randomizerMax = 19     # maximum Value supported is 255
 
-numberOfErrorStats = 6  # amount of error states defined on the machine in question
+numberOfErrorStats = 8  # amount of error states defined on the machine in question
 
 ##############            code            ##############
 
@@ -58,7 +58,7 @@ for randomizer in range(randomizerMin, randomizerMax+1):
 
     for x in range(accuracy):
 
-        if random.randint(0, 250)< (randomizer+40)%30+10:       
+        if random.randint(0, 250)< (randomizer+40)%30+15:       
             status = 3                             # chance for an error
             if random.randint(0, 150)< (randomizer+120)%30+34:
                 IN = ["0","0","0","0","0","0","0","0"] #ERROR 1

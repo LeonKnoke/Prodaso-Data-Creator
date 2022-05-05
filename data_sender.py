@@ -232,32 +232,40 @@ def createClient(dataList):
                 status = 0
                 waitTime2 = random.randint(productionTimeMin, productionTimeMax)
             
-            if random.randint(0, 250)< (randomizer+40)%30+10: 
+            if random.randint(0, 250)< (randomizer+40)%30+15: 
                 status = 3                             # chance for an error
                 if random.randint(0, 150)< (randomizer+120)%30+34:
                     IN = ["0","0","0","0","0","0","0","0"] #ERROR 1
                     waitTime2 = random.randint(error1TimeMin, error1TimeMax)
+                    errorNum = 1
                 elif random.randint(0, 50)< (randomizer+35)%15+3:
                     IN = ["0","0","0","1","0","0","0","0"] #ERROR 2
                     waitTime2 = random.randint(error2TimeMin, error2TimeMax)
+                    errorNum = 2
                 elif random.randint(0, 90)< (randomizer+12)%15+12:
                     IN = ["0","0","0","0","1","0","0","0"] #ERROR 3
                     waitTime2 = random.randint(error2TimeMin, error2TimeMax)
+                    errorNum = 3
                 elif random.randint(0, 90)< (randomizer+69)%15+4:
                     IN = ["0","0","0","1","1","0","0","0"] #ERROR 4
                     waitTime2 = random.randint(error2TimeMin, error2TimeMax)
+                    errorNum = 4
                 elif random.randint(0, 90)< (randomizer+20)%15+15:
                     IN = ["0","0","0","0","0","1","0","0"] #ERROR 5
                     waitTime2 = random.randint(error2TimeMin, error2TimeMax)
+                    errorNum = 5
                 elif random.randint(0, 90)< (randomizer+1)%15+16:
                     IN = ["0","0","0","1","0","1","0","0"] #ERROR 6
-                    waitTime2 = random.randint(error2TimeMin, error2TimeMax)   
+                    waitTime2 = random.randint(error2TimeMin, error2TimeMax) 
+                    errorNum = 6  
                 elif random.randint(0, 60)< (randomizer+90)%15+1:
                     IN = ["0","0","0","0","1","1","0","0"] #ERROR 7
-                    waitTime2 = random.randint(error2TimeMin, error2TimeMax)   
+                    waitTime2 = random.randint(error2TimeMin, error2TimeMax) 
+                    errorNum = 7  
                 else:
                     IN = ["0","0","0","1","1","1","0","0"] #ERROR 8
                     waitTime2 = random.randint(error3TimeMin, error3TimeMax)
+                    errorNum = 8
                 #status-=1
                 #if status<0: 
                  #   status=2
